@@ -166,6 +166,24 @@ public abstract class FadingActionBarHelperBase {
         return root;
     }
 
+    public void destroyView() {
+        mHeaderView = null;
+        mContentView = null;
+        mHeaderOverlayView = null;
+        mHeaderContainer = null;
+        mListViewBackgroundView = null;
+        mFirstGlobalLayoutPerformed = false;
+        mMarginView = null;
+        mLastHeaderHeight = -1;
+        mLastDampedScroll = 0;
+        mLastScrollPosition = 0;
+
+        if (Build.VERSION.SDK_INT <= 16) {
+            mActionBarBackgroundDrawable.setCallback(null);
+        }
+        mActionBarBackgroundDrawable = null;
+    }
+
     public void initActionBar(Activity activity) {
         if (mActionBarBackgroundDrawable == null) {
             mActionBarBackgroundDrawable = activity.getResources().getDrawable(mActionBarBackgroundResId);
