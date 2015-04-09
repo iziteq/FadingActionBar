@@ -1,4 +1,4 @@
-apply plugin: 'android-library'
+apply plugin: 'com.android.library'
 
 dependencies {
     compile project(':library')
@@ -29,4 +29,4 @@ android {
     }
 }
 
-apply from: '../maven_push.gradle'
+//apply from: '../maven_push.gradle'
