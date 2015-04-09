@@ -20,7 +20,7 @@
          with the content view. -->
     <ListView
         android:id="@+id/left_drawer"
-        android:paddingTop="@dimen/abc_action_bar_default_height"
+        android:paddingTop="@dimen/abc_action_bar_default_height_material"
         android:layout_width="240dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
