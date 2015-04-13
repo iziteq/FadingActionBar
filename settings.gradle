@@ -6,3 +6,5 @@ include ':samples-actionbarsherlock'
 
 include 'extras-actionbarcompat'
 include ':samples-actionbarcompat'
+
+include ':extras-toolbarcompat'
